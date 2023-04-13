@@ -5,44 +5,22 @@ slug: /
 
 # Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's get a quick overview of **JiffyScan in 2 minutes**.
 
-## Getting Started
+## Problem with existing block-explorers
 
-Get started by **creating a new site**.
+**[EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)** introduced a new abstract kind of transaction called UserOp and several supporting entities which are non-native to the EVM chain itself. These abstract entites are implemented in the form of several off-chain infrastructure components and on-chain smart contracts.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The leading block-explorers, like [etherscan](https://etherscan.io/), show these transactions from the perspective of a node, fail to show the relevant detail for a user in this ecosystem in a clean manner. This is because a normal on-chain transaction now could contain multiple userOperations and it's relevant metadata, obscuring what's relevant to understand an independent UserOperation.
 
-### What you'll need
+## How does JiffyScan Help
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+With **JiffyScan** you can easily understand the details relevant to a single UserOperation, Smart Contract Wallet or Account, Bundler, Paymaster, etc while the additional metadata needed to process it on-chain is abstracted away.
 
-## Generate a new site
+Thus these new entites are treated as first-class citizens while designing all the views and metrics.
 
-Generate a new Docusaurus site using the **classic template**.
+## Where to go next
 
-The classic template will automatically be added to your project after you run the command:
+If you're not yet familiar with the purpose of EIP-4337 and at atleast a conceptual level, what the new entities and their roles are, we'll recommend continuing to the next section before moving forward.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Else you can skip the next section and directly start understanding how to use JiffyScan.
