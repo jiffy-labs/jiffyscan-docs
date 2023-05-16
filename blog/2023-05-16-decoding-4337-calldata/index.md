@@ -7,18 +7,18 @@ tags: [calldata, education, Entrypoint, UserOp]
 
 ### Pre-reeds (<5 min)
 ---
-Just starting to explore ***Account Abstraction*** or ***4337***? Recommend scanning in these:
+If you're new to **Account Abstraction** or **4337**, I recommend reading these first:
 - <a href="/background/Account-Abstraction" target="_blank">Why Account Abstraction</a>
 - <a href="/background/eip-4337" target="_blank">What is 4337?</a>
 - <a href="/glossary" target="_blank">Key Entities in 4337</a>
 
-I assume that you're aware about what smart contracts are and how an externally-owned-wallet (EOA) triggers endpoints in a smart contract.
+I assume you know what smart contracts are and how an EOA triggers a smart contract function.
  
 ## Introduction
 ---
-Since [Eth Denver](https://www.ethdenver.com/) in Feb'23, crypto twitter has gone gaga about Account Abstraction and its potential impact on the ecosystem and [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)'s impact on EVM interaction.
+Since [Eth Denver](https://www.ethdenver.com/) in Feb'23, crypto twitter has gone gaga over Account Abstraction and [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)'s impact on EVM ecosystem.
 
- We talked to multiple web3 devs, and mentored teams at ETH Tokyo Hackathon, and realised that the basic concepts are still taking a good chunk of time and effort to grasp, causing delay in people getting their hands dirty. <br/>
+ After talking with multiple web3 devs as well as mentoring teams at ETH Tokyo Hackathon, we realised it's taking a good chunk of time and effort to grasp the basic concepts of 4337, causing delay in people getting their hands dirty. <br/>
 We're here to create easy-to-grasp material, with no fluff or annoying tech-jargon, atleast not without clarifying it in an easy-to understand manner.
 
 So let's get started.
@@ -27,13 +27,13 @@ So let's get started.
 
 ## Overview
 ---
-Anyone wishing to build on 4337, first needs to understand the actual data transaction data needed for 4337. That's what this post is dedicated to.
+Anyone wishing to build on 4337, first needs to understand the actual data submitted for a 4337 tranasction. This post is dedicated to achieve the same.
 
 The tutorial is basically split in two sections:
 1. Understanding the data fields representing an individual User Operations (UserOp)
 2. Understanding the metadata (bundle) representing the actual on-chain transaction
 
-### Reference Transaction
+### Sample Reference Transaction
 
 We will refer to the transaction (aka bundle) **0x7ed2...204** submitted to polygon chain on 15th May. We chose this bundle as it has more than 1 userOp and paymasters are used. <br/>
 Explore it on [PolyScan](https://polygonscan.com/tx/0x7ed286f4be6ed5d219054ae38b4fa1071befb26211c235b108472ccaabfee204)
@@ -54,7 +54,7 @@ A single blockchain transaction to the entrypoint contract can contain 1 or more
 
 ![Calldata for UserOp Hash 0xfa4...3e5](./UserOp_Flow_Highlevel.svg)
 
-UserOp, in a way, is the atomic unit of 4337. Now, let's disect it further.
+Thus, it would be fair to say that a `UserOp` is the atomic unit of 4337. Now, let's disect it further.
 
 ### UserOp Fields
 ---
@@ -120,10 +120,10 @@ Let's see what happened in our [reference bundle](#reference-transaction) above:
 <b>4337 Bundle Internal Txns as shown on <a href="https://polygonscan.com/tx/0x7ed286f4be6ed5d219054ae38b4fa1071befb26211c235b108472ccaabfee204">polyscan</a></b>
 </p>
 
-Here, there were two UserOps, both successful shown by the first two transfer calls of 0.2 MATIC and 0.18 MATIC respectively. Then there's a third internal transaction transferring 0.17699 MATIC to the beneificiary, which in this case is the [stackup](https://www.stackup.sh/) bundler itself.
+Here, there are two UserOps, both successful shown by the first two transfer calls of 0.2 MATIC and 0.18 MATIC respectively. Then there's a third internal transaction transferring 0.17699 MATIC to the beneificiary, which in this case is the [stackup](https://www.stackup.sh/)'s bundler itself.
 
 ## What's Next
-Probably give a try to submitting a UserOp yourself. Resources listed at [awesome-account-abstraction](https://github.com/4337Mafia/awesome-account-abstraction) can help you explore further.
+Try submitting a UserOp yourself. Resources listed at [awesome-account-abstraction](https://github.com/4337Mafia/awesome-account-abstraction) can help you explore further.
 
 Remember you can use the [JiffyScan](https://app.jiffyscan.xyz/) interface to share your UserOps with your friends and community.
 
