@@ -64,6 +64,16 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://jiffyscan.readme.io/',
+            label: 'API',
+            position: 'left',
+          },
+          {
+            href: 'https://app.jiffyscan.xyz/',
+            label: 'App',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/jiffy-labs/jiffyscan-docs',
             label: 'GitHub',
             position: 'right',
@@ -74,11 +84,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tutorial',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
@@ -94,10 +108,14 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'App',
+                href: 'https://app.jiffyscan.xyz/',
+              },
+              {
+                label: 'API',
+                href: 'https://jiffyscan.readme.io/',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/jiffy-labs/jiffyscan-docs',
@@ -105,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} JiffyLabs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} JiffyLabs, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
