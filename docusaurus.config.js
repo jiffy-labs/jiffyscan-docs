@@ -36,10 +36,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
         },
-        blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        // },
+        blog: {
+          showReadingTime: true,
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -63,7 +62,17 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://jiffyscan.readme.io/',
+            label: 'API',
+            position: 'left',
+          },
+          {
+            href: 'https://app.jiffyscan.xyz/',
+            label: 'App',
+            position: 'right',
+          },
           {
             href: 'https://github.com/jiffy-labs/jiffyscan-docs',
             label: 'GitHub',
@@ -75,11 +84,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tutorial',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
@@ -95,10 +108,14 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'App',
+                href: 'https://app.jiffyscan.xyz/',
+              },
+              {
+                label: 'API',
+                href: 'https://jiffyscan.readme.io/',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/jiffy-labs/jiffyscan-docs',
@@ -106,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} JiffyLabs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} JiffyLabs, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
