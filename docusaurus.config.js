@@ -49,11 +49,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+      },
       navbar: {
         title: 'JiffyScan',
         logo: {
           alt: 'My Site Logo',
           src: 'img/jiffy.svg',
+          href: 'https://app.jiffyscan.xyz',
         },
         items: [
           {
