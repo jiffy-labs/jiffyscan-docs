@@ -22,7 +22,7 @@ tags: [partnership, candide, SCW]
 <div style={{ width: '50%', float: 'left', clear: 'left' }}>
 	<p align="center">
 		<img
-			src="https://www.candidewallet.com/_next/static/images/assetScreen-8040e5293ff07b22779e3f42b29479a9.png"
+			src={require('./candide-wallet-whole-screen-view.png').default}
 			style={{height: 55 + 'vh', float: 'center' }}
 		/>
 	</p>
@@ -53,7 +53,7 @@ It dreams of many abstract features, which [Candide Wallet](https://docs.jiffysc
 
 <p align="center">
 	<img
-		src="https://www.candidewallet.com/_next/static/images/networkFeesSponsorship-2ba17d70b1547d6ecf3588255da391e8.png"
+		src={require('./gas-fee-using-stable-coins.png').default}
 		style={{height: 55 + 'vh', float: 'center' }}
 	/>
 </p>
@@ -78,7 +78,7 @@ It also simulates a transaction before actually submitting it and you can previe
 
 ### And more…
 
-![https://docs.candidewallet.com/assets/images/candide_stack-1367b0ad0428b22c9345d323dd15c445.png](https://docs.candidewallet.com/assets/images/candide_stack-1367b0ad0428b22c9345d323dd15c445.png)
+![Candide Technology Stack](./candide_stack.png)
 
 They are working on providing session keys to their users, to provide an even better experience, have their own [super-fast bundler in Python](https://docs.candidewallet.com/bundler/intro/), and a very supportive community helping them come up with more relevant offerings continuously.
 
