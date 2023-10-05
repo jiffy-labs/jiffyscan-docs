@@ -128,7 +128,7 @@ In this section, we break down what happens when a bundler decides to create a n
 
 <p align = "center">
 
-![Bundling Phase](./UserOp_Bundle_From_Mempool.svg)
+![Bundling Phase](./UserOp_Bundle_From_MemPool.svg)
 
 <b>Steps while adding UserOp to the Mempool</b>
 </p>
