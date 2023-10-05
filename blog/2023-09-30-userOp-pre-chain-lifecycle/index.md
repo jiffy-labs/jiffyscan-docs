@@ -2,7 +2,7 @@
 slug: 4337 userop lifecycle
 title: 'What happens to a UserOpeation within a Bundler?'
 authors: [aditya]
-tags: [4337 ,UserOp, Lifecycle, pre-chain, education, Entrypoint]
+tags: [4337, UserOp, Lifecycle, pre-chain, education, Entrypoint]
 ---
 
 ## Introduction
@@ -128,7 +128,7 @@ In this section, we break down what happens when a bundler decides to create a n
 
 <p align = "center">
 
-![Bundling Phase](./userOp_bundle_from_mempool.svg)
+![Bundling Phase](./UserOp_Bundle_From_Mempool.svg)
 
 <b>Steps while adding UserOp to the Mempool</b>
 </p>
