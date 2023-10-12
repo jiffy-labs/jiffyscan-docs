@@ -1,6 +1,6 @@
 ---
 slug: 4337 userop lifecycle
-title: 'What happens to a UserOpeation within a Bundler?'
+title: 'What happens to a UserOperation within a Bundler?'
 authors: [aditya]
 tags: [4337, UserOp, Lifecycle, pre-chain, education, Entrypoint]
 ---
