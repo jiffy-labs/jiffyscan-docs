@@ -1,0 +1,8 @@
+{
+  "label": "Bundlers & Paymaster",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Quick overview of Bundler and Paymaster service"
+  }
+}
