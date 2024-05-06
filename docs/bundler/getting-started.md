@@ -22,9 +22,10 @@ If you want to re-create your API key or want additional features , you can alwa
 
 You can find the list of publicly supported chains
 
-| Network | Chain ID | endpoint | Bundler | Paymaster | Debugger |
-| Vanar Testnet | 78600 | https://vanar-testnet.jiffyscan.xyz | :white_check_mark: | :white_check_mark: | X |
-| Polygon | 137 | https://polygon.jiffyscan.xyz | :white_check_mark: | X | X |
+| Network       | Chain ID | endpoint                            | Bundler            | Paymaster          | Debugger |
+| ------------- | -------- | ----------------------------------- | ------------------ | ------------------ | -------- |
+| Vanar Testnet | 78600    | https://vanar-testnet.jiffyscan.xyz | :white_check_mark: | :white_check_mark: | X        |
+| Polygon       | 137      | https://polygon.jiffyscan.xyz       | :white_check_mark: | X                  | X        |
 
 ## Tutorials
 
