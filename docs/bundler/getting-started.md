@@ -26,6 +26,7 @@ You can find the list of publicly supported chains
 | ------------- | -------- | ----------------------------------- | ------------------ | ------------------ | -------- |
 | Vanar Testnet | 78600    | https://vanar-testnet.jiffyscan.xyz | :white_check_mark: | :white_check_mark: | X        |
 | Polygon       | 137      | https://polygon.jiffyscan.xyz       | :white_check_mark: | X                  | X        |
+| Arbitrum      | 42161    | https://arbitrum.jiffyscan.xyz      | :white_check_mark: | X                  | X        |
 
 ## Tutorials
 
